@@ -1,5 +1,5 @@
 <html>
   <body>
-    What would you like to do this evening?
+    What would you like to do Thursday?
   </body
 </html>
