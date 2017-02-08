@@ -1,0 +1,243 @@
+body {
+  background-color: #ffffff;
+  color: #049dc9;
+}
+
+.caret {
+  color: #222222;
+  position: absolute;
+  left: 90%;
+  top: 45%;
+}
+
+.btn {
+  color: #000000;
+  text-align: left;
+}
+
+.normal-link {
+  color: #049dc9;
+  font-size: 8pt;
+  text-decoration: underline;
+}
+
+.important-link {
+  color: #049dc9;
+  font-size: 11pt;
+  text-decoration: underline;
+}
+
+.col-center {
+  float: none;
+  margin: 0 auto;    
+}
+
+.instruction {
+  color: #049dc9;
+  text-align: center;
+  font-size: 16pt;
+  font-style: italic;
+}
+
+.fine-print {
+  color: #000000;
+  font-size: 6pt;
+}
+
+.btn-primary {
+  background-color: #049dc9;
+}
+
+.btn-secondary {
+  background-color: #a8ddec;
+  color: #049dc9;
+  border: 1px solid #000000;
+  height: 24px;
+  padding-top:2px;
+  vertical-align: middle;
+}
+
+.panel-thin-line {
+  border-bottom: 2px solid #049dc9;
+}
+
+.panel-thick-line {
+  border-bottom: 10px solid #049dc9;
+}
+
+.sub-panel-heading {
+  color: #ffffff;
+  background-color: #049dc9;
+  border-bottom: 1px solid #000000;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding: 3px;
+  margin-bottom: 0;
+  height:25px;
+}
+
+.panel-heading {
+  background-color: #ffffff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+.panel-body {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.panel-footing {
+  background-color: #ffffff;
+  border-top: 3px solid #049dc9;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 3px;
+  margin: 0;
+}
+
+.login {
+  background-color: #ffffff;
+  border: 2px solid #b8b8b8;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.panel-full-page {
+  background-color: #ffffff;
+  border: 2px solid #b8b8b8;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 10px;
+  padding: 0;
+}
+
+.sub-panel {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 10px;
+  padding: 0;
+}
+
+.input-group-addon {
+  background-color:#e4e4e4;
+  border: 2px solid #b8b8b8;
+  border-radius: 5px;
+  width: 35px;
+  height: 20px;
+  padding:0;
+  margin:0;
+}
+
+.form-control {
+  border: 2px solid #b8b8b8;
+  border-radius: 5px;
+}
+
+.glyphicon {
+ color:#979797;
+}
+
+.toolbar {
+  background-color: #049dc9;
+  color: #ffffff;
+  width: 100%;
+  height: 31px;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 16pt;
+  font-weight:bold;
+}
+
+.toolbar-btn {
+  color: #ffffff;
+  font-size: 16pt;
+  height:28px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.toolbar-btn-sm {
+  color: #049dc9;
+  background-color: #e4e4e4;
+  border: 3px solid #e4e4e4;
+  font-size: 12pt;
+  height:20px;
+  margin-left:0px;
+  margin-right:0px;
+  cursor: pointer;
+}
+
+.toolbar-btn-sm-left {
+  color: #049dc9;
+  background-color: #e4e4e4;
+  border: 3px solid #e4e4e4;
+  font-size: 12pt;
+  height:20px;
+  margin-left:0px;
+  margin-right:0px; 
+  margin-top:-2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  cursor: pointer;
+}
+
+.toolbar-btn-sm-right {
+  color: #049dc9;
+  background-color: #d4d4d4;
+  border: 3px solid #d4d4d4;
+  font-size: 12pt;
+  height:20px;
+  margin-right:0px; 
+  margin-left:-3px; 
+  margin-top:-2px; 
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+.toolbar-icon-sm {
+  color: #ffffff;
+  font-size: 12pt;
+  height:22px;
+  margin-left:0px;
+  margin-right:0px;
+  cursor: pointer;
+}
+
+.toolbar-dropdown {
+  color: #000000;
+  font-size: 12pt;
+  width:210px;
+  height:25px; 
+  padding-top:0px;
+  margin-top:-5px;
+  border-radius: 5px;
+}
+
+.toolbar-field {
+  color: #000000;
+  font-size: 12pt;
+  width:210px;
+  height:25px; 
+  padding-top:0px;
+  margin-bottom: 5px;
+  /*margin-top:-5px;*/
+  border-radius: 5px;
+}

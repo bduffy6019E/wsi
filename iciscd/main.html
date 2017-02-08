@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICIS-CD</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="icis-cd.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      
+      $(".dropdown-menu").on('click', 'li a', function(){
+        $(".btn:first-child").html($(this).text() + ' <span class="caret"></span>');
+        $(".btn:first-child").val($(this).text());
+        $(".btn:first-child").width(179);
+      });
+      
+      // Populate the drop-down list for search criteria fields
+      //----------------------------------------------------------
+      fetchSeachableFieldNames();
+                             
+    });
+    
+    function fetchSeachableFieldNames() {
+      // Eventually, there will be an Ajax call to a service
+      // to fetch the list of available fields, but for now
+      // it's just stubbed out to a static list
+      //------------------------------------------------------
+      var list = "";
+      list += "<li><a href='#'>Enforcement ID</a></li>";
+      list += "<li><a href='#'>Court Docket Number</a></li>";
+      list += "<li><a href='#'>Final Order Type</a></li>";
+      list += "<li><a href='#'>Facility</a></li>";
+      list += "<li><a href='#'>Task Status</a></li>";
+      list += "<li><a href='#'>Priority</a></li>";
+      list += "<li><a href='#'>Assigned To</a></li>";
+      list += "<li><a href='#'>Supervisor</a></li>";
+      list += "<li><a href='#'>Staff Attorney</a></li>";
+      $('#searchCriteriaList').html(list);
+    }
+  </script>
+  </head>
+  <body>
+    <div class="panel panel-full-page">
+      <div class="panel-heading panel-thin-line">
+        <div class="row">
+          <div class="col-xs-2" style="margin-right:0; padding=0; align:right;">
+            <img src="ICIS_Logo.jpg" height="31px" style="margin-top:5px; margin-left:10px; align:right;" />
+          </div>
+          <div class="col-xs-8" style="margin-left:0px; padding:0;"><b>Consent Decree<br />Monitoring and Reporting</b></div>
+          <div class="col-xs-2">
+            <img class="pull-right" src="logo_epaseal.jpg" height="40px" style="margin-top:0; padding:0" />
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+
+        <div class="row">
+          <div class="col-xs-12 toolbar" style="margin:0;">
+            <div class="row">
+              <div class="col-xs-10" style="margin:-3px;">
+                Search: 
+                <span id="searchCriteriaContainer" class="dropdown" style="width: 210px;">
+                  <button class="btn btn-default dropdown-toggle toolbar-dropdown" type="button" id="searchCriteria" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Enforcement ID
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id="searchCriteriaList" aria-labelledby="searchCriteria">
+                    <!-- The contents of this list are populated by the fetchSerchCriteria() function -->
+                  </ul>
+                </span>
+                <input id="searchValue" class="toolbar-field" type="text" /><span class="glyphicon glyphicon-search toolbar-btn" />
+              </div>
+              <div class="col-xs-2">
+                 <span class="glyphicon glyphicon-menu-hamburger toolbar-btn pull-right" onclick="alert('Show column names');"></span>
+                 <span class="glyphicon glyphicon-new-window toolbar-btn pull-right" onclick="alert('Show export');"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>  <!-- End of Panel Body -->
+
+      <div class="panel-footing">
+        <div class="row">
+          <div class="col-xs-4">
+            <a class="normal-link pull-right" href="contact.html">Contact Us</a>
+          </div>
+          <div class="col-xs-2"></div>
+          <div class="col-xs-6">
+            <a class="normal-link" href="privacy.html">Privacy &amp; Security Notice</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

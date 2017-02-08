@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICIS-CD</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="icis-cd.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    // validate the user and launch the dashboard page
+    //-----------------------------------------------------
+    function login() {
+      // Authenticate the user
+      //----------------------------------------
+      sessionStorage.setItem("role", "contributor");
+      sessionStorage.setItem("region", "3");
+      
+      // If valid user, launch the dashboard
+      //----------------------------------------
+      window.open("dashboard.html", "_self");
+    }
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+      <div class="panel login">
+        <div class="panel-heading panel-thick-line">
+          <div class="row">
+            <div class="col-xs-3" style="margin-right:0; padding=0; align:right;">
+              <img src="ICIS_Logo.jpg" height="31px" style="margin-top:5px; margin-left:10px; align:right;" />
+            </div>
+            <div class="col-xs-6" style="margin-left:0; padding:0;">Consent Decree<br />Monitoring and Reporting</div>
+            <div class="col-xs-3">
+              <img class="pull-right" src="logo_epaseal.jpg" height="40px" style="margin-top:0; padding:0" />
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          
+          <!-- ---------------------------------
+            Setup the input fields 
+          ----------------------------------- -->
+          <div class="row" style="margin-top:25px;">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <div class="input-group">
+                <span class="input-group-addon icon-input">
+                  <i class="glyphicon glyphicon-user"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Username" size="50" />
+              </div>
+
+              <div class="input-group" style="margin-top: 5px;">
+                <span class="input-group-addon">
+                  <i class="glyphicon glyphicon-asterisk"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Password" size="50" />
+              </div>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          
+          <!-- ---------------------------------
+            Setup the login button
+          ----------------------------------- -->
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <button type="button" class="btn btn-primary pull-right" onclick="login();">Login</button>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          
+          <!-- ---------------------------------
+            Add the footer links
+          ----------------------------------- -->
+          <div class="row" style="margin-top: 25px;">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <a class="important-link centered" href="forgot.html">Forgot your user name or password?</a>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          <div class="row" style="margin-top: 15px;">
+            <div class="col-xs-12">
+              <span class="fine-print centered">Need Assistance? Call the EPA Customer Support center 
+                at 1-866-411-4EPA or email at EPACallCenter@epa.gov</span>
+            </div>
+          </div> 
+
+        </div>  <!-- End of Panel Body -->
+
+        <div class="panel-footing">
+          <div class="row">
+            <div class="col-xs-4">
+              <a class="normal-link pull-right" href="contact.html">Contact Us</a>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-6">
+              <a class="normal-link" href="privacy.html">Privacy &amp; Security Notice</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="col-xs-3"></div>
+  </div>
+</div>
+
+</body>
+</html>

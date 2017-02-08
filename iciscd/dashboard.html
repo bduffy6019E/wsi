@@ -1,0 +1,172 @@
+<html>
+<head>
+  <title>ICIS-CD</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="icis-cd.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    var role = "";
+    var region = "";
+    $(function() {
+      role = sessionStorage.getItem("role");
+      region = sessionStorage.getItem("region");
+      //region = "4";
+      $("#region").text(region);
+    });
+  </script>
+  </head>
+  <body>
+    <!--<div class="container">
+      <div class="row">
+        <div class="col-xs-6">-->
+          <div class="panel panel-full-page">
+            <div class="panel-heading panel-thin-line">
+              <div class="row">
+                <div class="col-xs-2" style="margin-right:0; padding=0; align:right;">
+                  <img src="ICIS_Logo.jpg" height="31px" style="margin-top:5px; margin-left:10px; align:right;" />
+                </div>
+                <div class="col-xs-8" style="margin-left:0px; padding:0;"><b>Consent Decree<br />Monitoring and Reporting</b></div>
+                <div class="col-xs-2">
+                  <img class="pull-right" src="logo_epaseal.jpg" height="40px" style="margin-top:0; padding:0" />
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+
+              <div class="row">
+                <div class="col-xs-12 toolbar" style="margin:0;">
+                  <div class="row">
+                    <div class="col-xs-8" style="margin:-3px;">
+                      Region <span id="region"></span>: Summary of Consent Decree Milestones
+                    </div>
+                    <div class="col-xs-2">
+                      <button class="btn btn-secondary" onclick="window.open('main.html','_self');">Continue to Full Site&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-forward" style="color:#049dc9; font-size:10pt;"></span>&nbsp;
+                      </button>
+                    </div>
+                     <div class="col-xs-2">
+                       <span class="glyphicon glyphicon-cog toolbar-btn pull-right" style="margin-top:-1px;" onclick="alert('Show settings');"></span>
+                       <span class="glyphicon glyphicon-question-sign toolbar-btn pull-right" style="margin-top:-1px;" onclick="alert('Show help');"></span>
+                    </div>
+                 </div>
+                </div>
+              </div>
+              
+              <!-- ---------------------------------
+                Setup the graph panels 
+              ----------------------------------- -->
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="panel sub-panel" style="height:200px;">
+                    <div class="sub-panel-heading panel-thin-line">
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <span style="padding:0;">
+                            <span class="glyphicon glyphicon-signal toolbar-btn-sm-left" onclick="alert('Show graph selectionp');"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom toolbar-btn-sm-right" onclick="alert('Show graph selection');"></span>
+                          </span>
+                        </div>
+                        <div class="col-xs-8" style="text-align:center;">CDs with a Penalty</div>
+                        <div class="col-xs-2">
+                          <span class="glyphicon glyphicon-question-sign toolbar-icon-sm pull-right" style="margin-top:-1px;" onclick="alert('Show graph help');"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-body">Body</div>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="panel sub-panel" style="height:200px;">
+                    <div class="sub-panel-heading panel-thin-line">
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <span style="padding:0;">
+                            <span class="glyphicon glyphicon-signal toolbar-btn-sm-left" onclick="alert('Show graph selectionp');"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom toolbar-btn-sm-right" onclick="alert('Show graph selection');"></span>
+                          </span>
+                        </div>
+                        <div class="col-xs-8" style="text-align:center;">CDs with a SEP</div>
+                        <div class="col-xs-2">
+                          <span class="glyphicon glyphicon-question-sign toolbar-icon-sm pull-right" style="margin-top:-1px;" onclick="alert('Show graph help');"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-body">Body</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="panel sub-panel" style="height:200px;">
+                    <div class="sub-panel-heading panel-thin-line">
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <span style="padding:0;">
+                            <span class="glyphicon glyphicon-signal toolbar-btn-sm-left" onclick="alert('Show graph selectionp');"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom toolbar-btn-sm-right" onclick="alert('Show graph selection');"></span>
+                          </span>
+                        </div>
+                        <div class="col-xs-8" style="text-align:center;">CD Final Compliance Ststus</div>
+                        <div class="col-xs-2">
+                          <span class="glyphicon glyphicon-question-sign toolbar-icon-sm pull-right" style="margin-top:-1px;" onclick="alert('Show graph help');"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-body">Body</div>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="panel sub-panel" style="height:200px;">
+                    <div class="sub-panel-heading panel-thin-line">
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <span style="padding:0;">
+                            <span class="glyphicon glyphicon-signal toolbar-btn-sm-left" onclick="alert('Show graph selectionp');"></span>
+                            <span class="glyphicon glyphicon-triangle-bottom toolbar-btn-sm-right" onclick="alert('Show graph selection');"></span>
+                          </span>
+                        </div>
+                        <div class="col-xs-8" style="text-align:center;">CDs in their 13th Quarter or Beyond</div>
+                        <div class="col-xs-2">
+                          <span class="glyphicon glyphicon-question-sign toolbar-icon-sm pull-right" style="margin-top:-1px;" onclick="alert('Show graph help');"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-body">Body</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10 instruction">
+                  Click on any element to view consent decrees associated with that element, or click 
+                  View Details to see all concent decrees within a specific category.
+                </div>
+                <div class="col-xs-1">
+                </div>
+              </div>
+            </div>  <!-- End of Panel Body -->
+
+            <div class="panel-footing">
+              <div class="row">
+                <div class="col-xs-4">
+                  <a class="normal-link pull-right" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-6">
+                  <a class="normal-link" href="privacy.html">Privacy &amp; Security Notice</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        <!--</div>
+        <div class="col-xs-3"></div>
+      </div>
+    </div>-->
+  </body>
+</html>
